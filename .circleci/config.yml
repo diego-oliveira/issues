@@ -19,6 +19,6 @@ jobs:
 
       # specify any bash command here prefixed with `run: `
       - run: mix local.hex --force
-      - run: yes | mix deps.get
-      - run: yes | mix local.rebar
+      - run: mix local.rebar
+      - run: mix deps.get
       - run: mix test
